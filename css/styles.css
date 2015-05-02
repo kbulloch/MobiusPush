@@ -1,0 +1,36 @@
+body {
+  background: url('../img/mobius-bg.jpg');
+  background-size: 110%;
+}
+
+.jumbotron {
+  text-align: center;
+  margin-top: 2%;
+  background-color: rgba(0,0,0,0.5);
+  color: #FFF;
+}
+
+.main-box {
+  margin-top: 10%;
+  color: #FFF;
+  text-align: center;
+}
+
+.btn-main {
+  padding: 3%;
+  font-size: 200%;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+.btn-main:hover {
+  color: inherit;
+  border: 3px solid white;
+}
+
+.btn-navy {
+  background-color: #003170;
+}
+
+.btn-green {
+  background-color: #a1cc3a;
+}
