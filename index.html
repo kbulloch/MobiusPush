@@ -1,27 +1,21 @@
-<html>
+<html ng-app="app">
 <head>
+  <meta charset="UTF-8">
   <title>Mobius</title>
+  <script src="lib/angular.js"></script>
+  <script src="lib/angular-ui-router.js"></script>
+  <script src="app.js"></script>
+  <script src="controllers/ViewController.js"></script>
   <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <div class="jumbotron">
-      <h1>Welcome to Mobius</h1>
-      <h4>Connecting Businesses with reliable service vendors</h4>
-    </div>
-    <div class="main-box">
-      <h3>
-        I am a...
-      </h3>
-      <button class="btn btn-navy btn-main">Business</button>
-      <button class="btn btn-green btn-main">Vendor</button>
-    </div>
-    <div class="navbar">
-      <h4><a href="#" class="nav-element">Contact</a>
-      <a href="#" class="nav-element">Support</a>
-      <a href="#" class="nav-element">About Us</a></h4>
-    </div>
+  <div class="container" ng-controller="ViewCtrl">
+    <div ui-view="jumbotron" ng-show="jumbotron"></div>
+    <div ui-view="main" ng-show="main"></div>
+    <div ui-view="business" ng-show="business"></div>
+    <div ui-view="vendor" ng-show="vendor"></div>
+    <navbar></navbar>
   </div>
 </body>
 </html>
