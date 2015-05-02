@@ -1,1 +1,16 @@
 <h1>BUSINESS VIEW</h1>
+
+<div class="business">
+
+  <form class="form-inline" role="form">
+    <select id="service-type">
+      <option selected="selected" disabled> Select Service... </option>
+      <option value="taxes"> Taxes </option>
+      <option value="payroll"> Payroll </option>
+      <option value="office-space"> Office Space </option>
+      <option value="legal"> Legal </option>
+    </select>
+  </form>
+
+  <button class="btn btn-default" ng-click="addVendorService()">Add a service</button>
+</div>
