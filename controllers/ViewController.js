@@ -11,14 +11,14 @@ app.controller("ViewCtrl", function ViewCtrl($scope) {
   };
 
   $scope.showBusiness = function() {
-    $scope.jumbotron = false;
+    $scope.jumbotron = true;
     $scope.main = false;
     $scope.business = true;
     $scope.vendor = false;
   };
 
   $scope.showVendor = function() {
-    $scope.jumbotron = false;
+    $scope.jumbotron = true;
     $scope.main = false;
     $scope.business = false;
     $scope.vendor = true;

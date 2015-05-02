@@ -26,3 +26,10 @@ app.directive("navbar", function() {
     templateUrl: "partials/navigation.html"
   }
 });
+
+app.directive("contact", function() {
+  return {
+    restrict: "E",
+    templateUrl: "partials/contact.html"
+  }
+});
