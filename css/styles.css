@@ -34,3 +34,18 @@ body {
 .btn-green {
   background-color: #a1cc3a;
 }
+
+.navbar {
+  text-align: center;
+  /*position: fixed;*/
+  /*bottom: 3%;*/
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+
+}
+
+.nav-element {
+  margin-right: 3%;
+  margin-left: 3%;
+}
