@@ -1,21 +1,62 @@
 <h1>BUSINESS VIEW</h1>
 
 <div class="business">
+  <div class="row">
+    <div class="col-sm-6">
+      <form role="form">
+        <div class="form-group">
+          <select ng-model="service1" class="form-control">
+            <option selected="selected" disabled> Select Service... </option>
+            <option value="Taxes"> Taxes </option>
+            <option value="Payroll"> Payroll </option>
+            <option value="Offices"> Office Space </option>
+            <option value="Legal"> Legal </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select ng-model="service2" class="form-control">
+            <option selected="selected" disabled> Select Service... </option>
+            <option value="Taxes"> Taxes </option>
+            <option value="Payroll"> Payroll </option>
+            <option value="Offices"> Office Space </option>
+            <option value="Legal"> Legal </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select ng-model="service3" class="form-control">
+            <option selected="selected" disabled> Select Service... </option>
+            <option value="Taxes"> Taxes </option>
+            <option value="Payroll"> Payroll </option>
+            <option value="Offices"> Office Space </option>
+            <option value="Legal"> Legal </option>
+          </select>
+        </div>
+        <button ng-click="getVendors()" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
 
-  <form class="form-inline" role="form">
-    <select ng-model="service">
-      <option selected="selected" disabled> Select Service... </option>
-      <option value="taxes"> Taxes </option>
-      <option value="payroll"> Payroll </option>
-      <option value="office-space"> Office Space </option>
-      <option value="legal"> Legal </option>
-    </select>
-    <button ng-click="getVendors()" class="btn btn-primary">Submit</button>
-  </form>
+    <div class="col-sm-6">
+      <div id="result1" ng-show=service1>
+        <h4>{{service1}}</h4>
+        <ul>
+          <li ng-repeat="item in vendors | filter:service1">{{item.name}}</li>
+        </ul>
+      </div>
+      <div id="result2" ng-show=service2>
+        <h4>{{service2}}</h4>
+        <ul>
+          <li ng-repeat="item in vendors | filter:service2">{{item.name}}</li>
+        </ul>
+      </div>
+      <div id="result3" ng-show=service3>
+        <h4>{{service3}}</h4>
+        <ul>
+          <li ng-repeat="item in vendors | filter:service3">{{item.name}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-  <ul>
-    <li ng-repeat="item in vendors | filter:service">{{item.name}}</li>
-  </ul>
 
   <!-- <button class="btn btn-default" ng-click="addVendorService()">Add a service</button> -->
 </div>

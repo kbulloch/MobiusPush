@@ -13,6 +13,9 @@ app.config(function($stateProvider) {
       "business": {
         templateUrl: "partials/business.html"
       },
+      "result": {
+        templateUrl: "partials/result.html"
+      },
       "vendor": {
         templateUrl: "partials/vendor.html"
       }

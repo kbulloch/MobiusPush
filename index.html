@@ -6,7 +6,6 @@
   <script src="lib/angular-ui-router.js"></script>
   <script src="app.js"></script>
   <script src="controllers/ViewController.js"></script>
-  <script src="controllers/VendorController.js"></script>
   <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
 </head>
@@ -14,7 +13,8 @@
   <div class="container" ng-controller="ViewCtrl">
     <div ui-view="jumbotron" ng-show="jumbotron"></div>
     <div ui-view="main" ng-show="main"></div>
-    <div ui-view="business" ng-show="business" ng-controller="VendorCtrl"></div>
+    <div ui-view="business" ng-show="business"></div>
+    <div ui-view="result" ng-show="result"></div>
     <div ui-view="vendor" ng-show="vendor"></div>
     <contact></contact>
   </div>
