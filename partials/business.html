@@ -4,8 +4,8 @@
   <div class="row">
     <div class="col-sm-6">
       <form role="form">
-        <div class="form-group">
-          <select ng-model="service1" class="form-control">
+        <div class="form-group" ng-repeat="choice in choices">
+          <select ng-model="choice.name" class="form-control">
             <option selected="selected" disabled> Select Service... </option>
             <option value="Taxes"> Taxes </option>
             <option value="Payroll"> Payroll </option>
@@ -13,24 +13,7 @@
             <option value="Legal"> Legal </option>
           </select>
         </div>
-        <div class="form-group">
-          <select ng-model="service2" class="form-control">
-            <option selected="selected" disabled> Select Service... </option>
-            <option value="Taxes"> Taxes </option>
-            <option value="Payroll"> Payroll </option>
-            <option value="Offices"> Office Space </option>
-            <option value="Legal"> Legal </option>
-          </select>
-        </div>
-        <div class="form-group">
-          <select ng-model="service3" class="form-control">
-            <option selected="selected" disabled> Select Service... </option>
-            <option value="Taxes"> Taxes </option>
-            <option value="Payroll"> Payroll </option>
-            <option value="Offices"> Office Space </option>
-            <option value="Legal"> Legal </option>
-          </select>
-        </div>
+        <button ng-click="addChoice()" class="btn btn-default">Add a service</button>
         <button ng-click="getVendors()" class="btn btn-primary">Submit</button>
       </form>
     </div>

@@ -1,5 +1,14 @@
 app.controller("ViewCtrl", function ViewCtrl($scope) {
 
+  $scope.choices = [
+    { id: "choice1" }
+  ]
+
+  $scope.addChoice = function() {
+    var newID = $scope.choices.length+1;
+    $scope.choices.push({'id':'choice'+newID});
+  }
+
   $scope.vendors = [
     { name: "Bigsly", type: "Taxes" },
     { name: "Wainwright", type: "Taxes" },
