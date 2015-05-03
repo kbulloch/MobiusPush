@@ -1,21 +1,27 @@
-<h1>BUSINESS VIEW</h1>
+<h1>Select services you need:</h1>
 
-<div class="business">
+<div class="business center-box">
   <div class="row">
     <div class="col-sm-6">
       <form role="form">
         <div class="form-group" ng-repeat="service in choices">
+          <label for="service.name">Service Options:</label>
           <select ng-model="service.name" class="form-control">
-            <option selected="selected" disabled> Select Service... </option>
+            <option value="Contractor"> Contractor </option>
             <option value="Taxes"> Taxes </option>
             <option value="Payroll"> Payroll </option>
             <option value="Offices"> Office Space </option>
             <option value="Legal"> Legal </option>
+            <option value="Answering"> Answering </option>
+            <option value="Web Design"> Web Design </option>
+            <option value="Telemarketing"> Telemarketing </option>
+            <option value="Storage"> Storage </option>
+            <option value="SEO"> SEO </option>
           </select>
           <input type="checkbox" ng-model="email">Email Vendor Group
           <textarea ng-show="email" ng-model="service.message">Your message...</textarea>
         </div>
-        <button ng-click="getVendors()" class="btn btn-primary">Submit</button>
+        <button ng-click="getVendors()" class="btn btn-navy">Submit</button>
         <button ng-click="addChoice()" class="btn btn-default">Add a service</button>
       </form>
     </div>

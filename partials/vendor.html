@@ -1,9 +1,28 @@
-<h1>VENDOR MODE</h1>
+<h1>New Vendor Application</h1>
 
-<div class="vendor">
+<div class="vendor center-box">
   <form role="form">
     <div class="form-group">
-      <input type="text" >
+      <input type="text" ng-model="vendor_name" class="form-control" placeholder="Company Name">
     </div>
+    <div class="form-group">
+      <label for="service">Service offered:</label>
+      <select ng-model="vendor_service" class="form-control">
+        <option value="Contractor"> Contractor </option>
+        <option value="Taxes"> Taxes </option>
+        <option value="Payroll"> Payroll </option>
+        <option value="Offices"> Office Space </option>
+        <option value="Legal"> Legal </option>
+        <option value="Answering"> Answering </option>
+        <option value="Web Design"> Web Design </option>
+        <option value="Telemarketing"> Telemarketing </option>
+        <option value="Storage"> Storage </option>
+        <option value="SEO"> SEO </option>
+      </select>
+    </div>
+    <div class="form-group">
+      <input type="text" ng-model="vendor_location" placeholder="Location" class="form-control">
+    </div>
+    <button class="btn btn-green" ng-click="showVendorAdded()">Submit</button>
   </form>
 </div>

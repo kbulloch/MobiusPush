@@ -44,7 +44,7 @@ navbar {
   margin-right: auto;
   margin-left: auto;
   position: relative;
-  bottom: -5%;
+  bottom: 5%;
   height: 10px;
 }
 
@@ -60,7 +60,7 @@ navbar {
 .main-box {
   margin-top: 10%;
   text-align: center;
-  margin-bottom: 1%;
+  margin-bottom: 10%;
 }
 
 .btn-main {
@@ -72,19 +72,38 @@ navbar {
 
 .btn-main:hover {
   color: inherit;
-  border: 3px solid white;
+  border: 3px solid #6d7b75;
 }
 
 .btn-navy {
   background-color: #003170;
+  color: #FFF;
 }
 
 .btn-green {
+  color: #FFF;
   background-color: #a1cc3a;
 }
 
-.business {
-  margin-top: 10%;
+.btn:hover {
+  color: #6d7b75;
+}
+
+.center-box {
+  margin-top: 5%;
   margin-left: 15%;
   margin-right: 15%;
+  margin-bottom: 10%;
+}
+
+#result {
+  margin-bottom: 10%;
+}
+
+.vendor {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
