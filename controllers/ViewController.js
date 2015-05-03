@@ -47,6 +47,7 @@ app.controller("ViewCtrl", function ViewCtrl($scope) {
     $scope.vendor = false;
     $scope.result = false;
     $scope.vendor_added = false;
+    $scope.report = false;
   };
 
   $scope.showBusiness = function() {
@@ -56,6 +57,7 @@ app.controller("ViewCtrl", function ViewCtrl($scope) {
     $scope.vendor = false;
     $scope.result = false;
     $scope.vendor_added = false;
+    $scope.report = false;
   };
 
   $scope.showVendor = function() {
@@ -65,6 +67,7 @@ app.controller("ViewCtrl", function ViewCtrl($scope) {
     $scope.vendor = true;
     $scope.result = false;
     $scope.vendor_added = false;
+    $scope.report = false;
   };
 
   $scope.showContact = function() {
@@ -75,6 +78,7 @@ app.controller("ViewCtrl", function ViewCtrl($scope) {
     $scope.contact = true;
     $scope.vendor_added = false;
     $scope.result = false;
+    $scope.report = false;
   };
 
   $scope.showVendorAdded = function() {
@@ -85,6 +89,18 @@ app.controller("ViewCtrl", function ViewCtrl($scope) {
     $scope.contact = false;
     $scope.result = false;
     $scope.vendor_added = true;
+    $scope.report = false;
+  }
+
+  $scope.showReport = function() {
+    $scope.jumbotron = true;
+    $scope.main = false;
+    $scope.business = false;
+    $scope.vendor = false;
+    $scope.contact = false;
+    $scope.result = false;
+    $scope.vendor_added = false;
+    $scope.report = true;
   }
 
 });

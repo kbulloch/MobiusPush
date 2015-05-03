@@ -21,6 +21,9 @@ app.config(function($stateProvider) {
       },
       "vendor_added": {
         templateUrl: "partials/vendor_added.html"
+      },
+      "report": {
+        templateUrl: "partials/report.html"
       }
     }
   })

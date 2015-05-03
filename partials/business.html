@@ -6,7 +6,7 @@
       <form role="form">
         <div class="form-group" ng-repeat="service in choices">
           <label for="service.name">Service Options:</label>
-          <select ng-model="service.name" class="form-control">
+          <select ng-model="service.name" class="form-control" required>
             <option value="Contractor"> Contractor </option>
             <option value="Taxes"> Taxes </option>
             <option value="Payroll"> Payroll </option>

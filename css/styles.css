@@ -30,13 +30,13 @@ a {
 }*/
 
 .jumbotron {
-  background: url('../img/mobius-bg.jpg');
-  background-size: 100%;
+  background: url('../img/logogradient.png');
+  background-size: 100% 100%;
   text-align: center;
   margin-top: 2%;
   background-color: rgba(0,0,0,0.5);
   color: #FFF;
-  height: 20%%;
+  height: 25%;
 }
 
 navbar {
@@ -107,4 +107,8 @@ navbar {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+}
+
+#report_img {
+  width: 100%;
 }
