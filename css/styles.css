@@ -1,10 +1,19 @@
+/*
+so color palette:  #003170 (navy), #a1cc3a (green), #6d7b75 (grey), #000000 (black)
+*/
+
 body {
-  background: #6d7b75;
-  color: #FFF;
+  background: #FFF;
+  color: #6d7b75;
+  font-family: 'Rosario', sans-serif;
 }
 
 a {
-  color: #FFF;
+  color: #a1cc3a;
+}
+
+.container {
+  height: 90%;
 }
 
 /*body::after {
@@ -30,12 +39,12 @@ a {
   height: 20%%;
 }
 
-.navbar {
+navbar {
   text-align: center;
-  margin-top: 5%;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 0;
+  position: relative;
+  bottom: -5%;
   height: 10px;
 }
 
@@ -50,12 +59,12 @@ a {
 
 .main-box {
   margin-top: 10%;
-  color: #FFF;
   text-align: center;
-  margin-bottom: 10%;
+  margin-bottom: 1%;
 }
 
 .btn-main {
+  color: #FFF;
   padding: 3%;
   font-size: 200%;
   border: 3px solid rgba(0,0,0,0);
@@ -75,6 +84,7 @@ a {
 }
 
 .business {
+  margin-top: 10%;
   margin-left: 15%;
   margin-right: 15%;
 }

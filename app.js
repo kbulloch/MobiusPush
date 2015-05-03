@@ -7,9 +7,6 @@ app.config(function($stateProvider) {
       "jumbotron": {
         templateUrl: "partials/jumbotron.html"
       },
-      "jumbo-nav": {
-        templateUrl: "partials/jumbo-nav.html"
-      },
       "main": {
         templateUrl: "partials/main.html"
       },
@@ -30,12 +27,5 @@ app.directive("navbar", function() {
   return {
     restrict: "E",
     templateUrl: "partials/navigation.html"
-  }
-});
-
-app.directive("contact", function() {
-  return {
-    restrict: "E",
-    templateUrl: "partials/contact.html"
   }
 });

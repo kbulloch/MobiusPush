@@ -10,22 +10,22 @@ app.controller("ViewCtrl", function ViewCtrl($scope) {
   }
 
   $scope.vendors = [
-    { name: "Bigsly", type: "Taxes" },
-    { name: "Wainwright", type: "Taxes" },
-    { name: "Townshend", type: "Taxes" },
-    { name: "H&R Block", type: "Taxes" },
-    { name: "Moonfield", type: "Payroll" },
-    { name: "Penniwise", type: "Payroll" },
-    { name: "PayPlus", type: "Payroll" },
-    { name: "Money Matters LLC", type: "Payroll" },
-    { name: "Cromulux", type: "Offices" },
-    { name: "Samsonite", type: "Offices" },
-    { name: "Swingmark Spaces", type: "Offices" },
-    { name: "Elwood Inc", type: "Offices" },
-    { name: "Morewood and Graybles", type: "Legal" },
-    { name: "Jameson and Sons", type: "Legal" },
-    { name: "Finklestein, French and Poe", type: "Legal" },
-    { name: "Budget Legal", type: "Legal" }
+    { name: "Bigsly", type: "Taxes", rating: 4, cost: 0, location: "Portland" },
+    { name: "Wainwright", type: "Taxes", rating: 3, cost: 0, location: "Portland" },
+    { name: "Townshend", type: "Taxes", rating: 5, cost: 0, location: "Portland" },
+    { name: "H&R Block", type: "Taxes", rating: 3, cost: 0, location: "Portland" },
+    { name: "Moonfield", type: "Payroll", rating: 4, cost: 0, location: "Portland" },
+    { name: "Penniwise", type: "Payroll", rating: 4, cost: 0, location: "Portland" },
+    { name: "PayPlus", type: "Payroll", rating: 3, cost: 0, location: "Portland" },
+    { name: "Money Matters LLC", type: "Payroll", rating: 2, cost: 0, location: "Portland" },
+    { name: "Cromulux", type: "Offices", rating: 5, cost: 0, location: "Portland" },
+    { name: "Samsonite", type: "Offices", rating: 5, cost: 0, location: "Portland" },
+    { name: "Swingmark Spaces", type: "Offices", rating: 4, cost: 0, location: "Portland" },
+    { name: "Elwood Inc", type: "Offices", rating: 3, cost: 0, location: "Portland" },
+    { name: "Morewood and Graybles", type: "Legal", rating: 4, cost: 0, location: "Portland" },
+    { name: "Jameson and Sons", type: "Legal", rating: 3, cost: 0, location: "Portland" },
+    { name: "Finklestein, French and Poe", type: "Legal", rating: 4, cost: 0, location: "Portland" },
+    { name: "Budget Legal", type: "Legal", rating: 2, cost: 0, location: "Portland" }
   ];
 
   $scope.getVendors = function() {
@@ -38,7 +38,6 @@ app.controller("ViewCtrl", function ViewCtrl($scope) {
 
   $scope.showMain = function() {
     $scope.jumbotron = true;
-    $scope.jumbonav = false;
     $scope.main = true;
     $scope.business = false;
     $scope.vendor = false;
@@ -46,8 +45,7 @@ app.controller("ViewCtrl", function ViewCtrl($scope) {
   };
 
   $scope.showBusiness = function() {
-    $scope.jumbotron = false;
-    $scope.jumbonav = true;
+    $scope.jumbotron = true;
     $scope.main = false;
     $scope.business = true;
     $scope.vendor = false;
@@ -55,8 +53,7 @@ app.controller("ViewCtrl", function ViewCtrl($scope) {
   };
 
   $scope.showVendor = function() {
-    $scope.jumbotron = false;
-    $scope.jumbonav = true;
+    $scope.jumbotron = true;
     $scope.main = false;
     $scope.business = false;
     $scope.vendor = true;
@@ -64,8 +61,7 @@ app.controller("ViewCtrl", function ViewCtrl($scope) {
   };
 
   $scope.showContact = function() {
-    $scope.jumbotron = false;
-    $scope.jumbonav = true;
+    $scope.jumbotron = true;
     $scope.main = false;
     $scope.business = false;
     $scope.vendor = false;
