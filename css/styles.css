@@ -23,6 +23,7 @@ a {
   margin-top: 2%;
   background-color: rgba(0,0,0,0.5);
   color: #6d7b75;
+  color: #FFF;
   height: 27%;
   width: 70%;
   display: block;
@@ -30,9 +31,10 @@ a {
   margin-left: auto;
 }
 
-.jumbotron > h1, h4 {
+.jumbotron > h1, .jumbotron > h4 {
   position: relative;
   top: -90%;
+  text-shadow: 0 0 2px #003170;
 }
 
 navbar {
