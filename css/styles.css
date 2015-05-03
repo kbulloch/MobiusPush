@@ -27,6 +27,21 @@ a {
   margin-top: 2%;
   background-color: rgba(0,0,0,0.5);
   color: #FFF;
+  padding-bottom: 0;
+}
+
+.navbar {
+  text-align: center;
+  margin-top: 5%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+  height: 10px;
+}
+
+.nav-element {
+  margin-right: 3%;
+  margin-left: 3%;
 }
 
 .transparent-text {
@@ -57,16 +72,4 @@ a {
 
 .btn-green {
   background-color: #a1cc3a;
-}
-
-.navbar {
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 0;
-}
-
-.nav-element {
-  margin-right: 3%;
-  margin-left: 3%;
 }

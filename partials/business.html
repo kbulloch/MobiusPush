@@ -3,15 +3,19 @@
 <div class="business">
 
   <form class="form-inline" role="form">
-    <select id="service-type">
+    <select ng-model="service">
       <option selected="selected" disabled> Select Service... </option>
       <option value="taxes"> Taxes </option>
       <option value="payroll"> Payroll </option>
       <option value="office-space"> Office Space </option>
       <option value="legal"> Legal </option>
     </select>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button ng-click="getVendors()" class="btn btn-primary">Submit</button>
   </form>
 
-  <button class="btn btn-default" ng-click="addVendorService()">Add a service</button>
+  <ul>
+    <li ng-repeat="item in vendors | filter:service">{{item.name}}</li>
+  </ul>
+
+  <!-- <button class="btn btn-default" ng-click="addVendorService()">Add a service</button> -->
 </div>
