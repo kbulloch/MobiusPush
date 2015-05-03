@@ -16,27 +16,23 @@ a {
   height: 90%;
 }
 
-/*body::after {
-  content: "";
-  background: #FFF;
-  background-size: 200%;
-  opacity: 0.2;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}*/
-
 .jumbotron {
   background: url('../img/logogradient.png');
-  background-size: 100% 100%;
+  background-size: 100% 150px;
   text-align: center;
   margin-top: 2%;
   background-color: rgba(0,0,0,0.5);
-  color: #FFF;
-  height: 25%;
+  color: #6d7b75;
+  height: 27%;
+  width: 70%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.jumbotron > h1, h4 {
+  position: relative;
+  top: -90%;
 }
 
 navbar {
