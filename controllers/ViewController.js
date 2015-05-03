@@ -38,6 +38,7 @@ app.controller("ViewCtrl", function ViewCtrl($scope) {
 
   $scope.showMain = function() {
     $scope.jumbotron = true;
+    $scope.jumbonav = false;
     $scope.main = true;
     $scope.business = false;
     $scope.vendor = false;
@@ -45,7 +46,8 @@ app.controller("ViewCtrl", function ViewCtrl($scope) {
   };
 
   $scope.showBusiness = function() {
-    $scope.jumbotron = true;
+    $scope.jumbotron = false;
+    $scope.jumbonav = true;
     $scope.main = false;
     $scope.business = true;
     $scope.vendor = false;
@@ -53,7 +55,8 @@ app.controller("ViewCtrl", function ViewCtrl($scope) {
   };
 
   $scope.showVendor = function() {
-    $scope.jumbotron = true;
+    $scope.jumbotron = false;
+    $scope.jumbonav = true;
     $scope.main = false;
     $scope.business = false;
     $scope.vendor = true;
@@ -61,7 +64,8 @@ app.controller("ViewCtrl", function ViewCtrl($scope) {
   };
 
   $scope.showContact = function() {
-    $scope.jumbotron = true;
+    $scope.jumbotron = false;
+    $scope.jumbonav = true;
     $scope.main = false;
     $scope.business = false;
     $scope.vendor = false;
