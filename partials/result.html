@@ -1,7 +1,7 @@
 <h3>Your search results</h3>
 
 <div id="results" ng-repeat="choice in choices">
-  <h4>{{}}</h4>
+  <h4>{{choice.name}}</h4>
   <ul>
     <li ng-repeat="item in vendors | filter:choice.name">{{item.name}}</li>
   </ul>
