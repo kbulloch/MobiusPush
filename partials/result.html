@@ -3,13 +3,13 @@
   <h3>Your search results</h3>
 
   <div ng-repeat="service in choices">
-    <h4>{{service.name}}</h4>
+    <h3>{{service.name}}</h3>
     <div ng-show=service.message>
       <p>Your message will be sent to the vendor group:</p>
       <p>{{service.message}}</p>
     </div>
     <ul>
-      <li ng-repeat="item in vendors | filter:service.name">{{item.name}}</li>
+      <h4><li ng-repeat="item in vendors | filter:service.name">{{item.name}}</li></h4>
     </ul>
   </div>
 
